@@ -115,8 +115,8 @@ We gaan stap voor stap gedrag aan onze pagina toevoegen.
     -	haal alle img- elementen op en stop deze in een array, dit kan je als volgt doen
 const imgElementen = document.getElementsByTagName('img');
     -	overloop deze array en definieer de onclick event handler voor elk element:
-      i.	je roept de methode plaatsSymbool aan van spelbord; als argument voor de parameter symbool geef je ‘O’ door, de argumenten voor de rij en kol parameters zal je uit het id van het img-element moeten halen. Denk eraan dat arrays in JavaScript 0-based zijn en dat de id’s van de img-elementen 1-based zijn.
-      ii.	stel het src-attribuut het img-element in op ‘images/O.png’
+      1.	je roept de methode plaatsSymbool aan van spelbord; als argument voor de parameter symbool geef je ‘O’ door, de argumenten voor de rij en kol parameters zal je uit het id van het img-element moeten halen. Denk eraan dat arrays in JavaScript 0-based zijn en dat de id’s van de img-elementen 1-based zijn.
+      2.	stel het src-attribuut het img-element in op ‘images/O.png’
 5.	Stel de init functie in als event handler voor het load event van window
 6.	Je kan nu de index pagina laden in de browser en kan op een correcte manier (klik op vakje vult dat vakje met O), het bord volledig opvullen met het symbool O…
 
@@ -137,10 +137,10 @@ const imgElementen = document.getElementsByTagName('img');
       ![oxoIndex.PNG](/docs/images/oxoIndex.PNG 'Index')
 11.	Je kan nu de klasse Spelbord en Spel finaliseren.
     -	Spelbord 
-      i.	voeg een methode bevatDrieOpEenrij(symbool, rij, kol) toe die retourneert of er al dan niet een drie op een rij wordt gevormd door het zetten van symbool op rij, kol
-      ii.	voeg een methode isVolzet() toe die retourneert of het bord al dan niet volledig opgevuld is
+      1.	voeg een methode bevatDrieOpEenrij(symbool, rij, kol) toe die retourneert of er al dan niet een drie op een rij wordt gevormd door het zetten van symbool op rij, kol
+      2.	voeg een methode isVolzet() toe die retourneert of het bord al dan niet volledig opgevuld is
     -	Spel
-      i.	voeg een methode isEindeSpel() toe. Deze methode retourneert true als het bord volzet is of indien er een drie op een rij is gevormd
-      ii.	pas de methode plaatsSymbool(…) aan. Er kan geen symbool geplaatst worden als het einde van het spel is bereikt. Als het einde van het spel wordt bereikt bij het plaatsen van een symbool dan wordt het winnaarsSymbool ingesteld
+      1.	voeg een methode isEindeSpel() toe. Deze methode retourneert true als het bord volzet is of indien er een drie op een rij is gevormd
+      2.	pas de methode plaatsSymbool(…) aan. Er kan geen symbool geplaatst worden als het einde van het spel is bereikt. Als het einde van het spel wordt bereikt bij het plaatsen van een symbool dan wordt het winnaarsSymbool ingesteld
 12.	Pas de toHtml functie aan zodat afhankelijk van de toestand van het spel, de juiste message weergegeven wordt: volgende speler/gelijkspel/winnaar. Veel speelplezier!
 ![oxoComplete.PNG](/docs/images/oxoComplete.PNG 'Complete')
