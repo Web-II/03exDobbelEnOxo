@@ -121,7 +121,7 @@ const imgElementen = document.getElementsByTagName('img');
 6.	Je kan nu de index pagina laden in de browser en kan op een correcte manier (klik op vakje vult dat vakje met O), het bord volledig opvullen met het symbool O…
 
       ![oxoAlleenO.PNG](/docs/images/oxoAlleenO.PNG 'Start')
-7.	Declareer een klasse Spel.js met volgende properties
+7.	Declareer een klasse Spel met volgende properties
     -	_spelbord: instantie van Spelbord, aan te maken in de constructor
     -	_tePlaatsenSymbool, initieel ‘O’, voorzie een getter
     -	_geplaatsteSymbool, initieel ‘X’, voorzie een getter
